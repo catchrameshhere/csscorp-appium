@@ -29,8 +29,15 @@ public class Base {
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("platformVersion", "11");
 		cap.setCapability("deviceName", "ce7b260f");
-		cap.setCapability("appPackage", "com.oneplus.calculator");
-		cap.setCapability("appActivity", "com.oneplus.calculator.Calculator");
+		
+		//calculator
+//		cap.setCapability("appPackage", "com.oneplus.calculator");
+//		cap.setCapability("appActivity", "com.oneplus.calculator.Calculator");
+		
+		//google maps
+		cap.setCapability("appPackage", "com.google.android.apps.maps");
+		cap.setCapability("appActivity", "com.google.android.apps.maps.Maps");
+		
 		
 		try {
 			driver = new AndroidDriver(new URL(hubUrl),cap);
